@@ -1,0 +1,60 @@
+.prediction-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #d4edda, #a8e6cf);
+  padding-top: 80px;
+}
+
+.prediction-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 20px; 
+}
+
+.prediction-card h2 {
+  color: #2f5d27;
+  margin-bottom: 20px;
+}
+
+.prediction-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.predicted-crop {
+  font-size: 2rem;
+  color: #4caf50;
+  font-weight: bold;
+  margin-bottom: 0; 
+}
+
+
+.back-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+ 
+  position: static !important;  
+  float: none !important;      
+  display: inline-block;        
+  margin-top: 10px;              
+}
+
+.back-button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}

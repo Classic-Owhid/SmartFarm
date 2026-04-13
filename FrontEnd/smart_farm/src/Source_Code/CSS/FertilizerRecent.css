@@ -1,0 +1,109 @@
+.recent-fertilizer-card {
+  width: 3.5in;
+  height: 4in;
+  background: linear-gradient(135deg, #f8fff8 0%, #e8f5e8 100%);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1f0e1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.recent-fertilizer-card:hover {
+  transform: translateY(-8px) scale(1.03); /* pop up and grow slightly */
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+}
+
+.recent-fertilizer-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #689F38, #8BC34A);
+}
+
+.recent-fertilizer-card h2,
+.recent-fertilizer-card h3,
+.recent-fertilizer-card p {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #222;
+  text-shadow: none; /* remove blurry shadow */
+}
+
+.recent-fertilizer-card h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.recent-fertilizer-card h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.recent-fertilizer-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: justify;
+  background: #ffffff; /* solid background for readability */
+  color: #222;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 3px solid #4CAF50;
+  flex-grow: 1;
+}
+
+.fertilizer-icon {
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0;
+  display: block;
+}
+
+.explore-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #689F38, #4CAF50);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: auto;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.explore-btn:hover {
+  background: linear-gradient(135deg, #4CAF50, #689F38);
+  box-shadow: 0 4px 12px rgba(104, 159, 56, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Loading / empty state text */
+.loading-text {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  text-align: center;
+  font-style: italic;
+  margin: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

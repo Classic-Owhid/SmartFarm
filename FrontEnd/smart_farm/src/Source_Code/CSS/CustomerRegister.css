@@ -1,0 +1,144 @@
+/* Remove global body background */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Scope background to login wrapper only */
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 90vh;
+  padding-top: 15vh;
+
+  /* Login page background */
+  background: linear-gradient(rgba(0, 100, 0, 0.45), rgba(0, 100, 0, 0.45)),
+    url("../Images/loginback.png") center/cover no-repeat;
+}
+/* Card */
+.register-card {
+  background: #ffffffee;
+  width: 400px;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px rgba(0, 60, 0, 0.3);
+  border-left: 5px solid #3d8f48;
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+.register-card h2 {
+  text-align: center;
+  color: #256d1b;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Labels */
+.register-card label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #2b5434;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Inputs */
+.register-card input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1.5px solid #c3dfc9;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.register-card input:focus {
+  border-color: #2f7f38;
+  outline: none;
+  box-shadow: 0px 0px 6px rgba(46, 133, 56, 0.4);
+}
+
+/* Password container */
+.password-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.password-box button {
+  padding: 10px;
+  border: none;
+  background: #3fa44f;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.password-box button:hover {
+  background: #2f7f38;
+}
+
+/* Error message */
+.error {
+  font-size: 13px;
+  color: red;
+  margin-bottom: 8px;
+}
+
+/* Button */
+.register-btn {
+  width: 100%;
+  background: #2f7f38;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: #24692d;
+  transform: scale(1.02);
+}
+
+/* Login text under the button */
+.login-text {
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: center;
+  color: #2b5434;
+}
+
+.login-link {
+  color: #256d1b;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+  color: #1e4e18;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

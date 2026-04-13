@@ -1,0 +1,48 @@
+/* AdminWelcome.css */
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6vh;
+  min-height: 100vh; /* full height */
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%); /* gradient background */
+  padding: 20px;
+  width: 172.7vh;
+}
+
+.welcome-card {
+  background-color: white;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  margin-top: -10vh;
+}
+
+.welcome-card h2 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.welcome-card p {
+  font-size: 18px;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+/* Optional: subtle fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,68 @@
+.services-container {
+  height: 100vh;
+  background-image: url("../Images/homepage.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.services-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 60px 80px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.services-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+.services-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #d1d1d1;
+}
+
+
+.services-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.service-btn {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+  background-color: #00ff88;
+  color: black;
+  transform: scale(1.05);
+}
+
+
+.crop:hover {
+  background-color: #8fff7f;
+}
+
+.disease:hover {
+  background-color: #ff7070;
+}

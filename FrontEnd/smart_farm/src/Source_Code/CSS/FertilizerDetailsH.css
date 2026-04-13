@@ -1,0 +1,193 @@
+/* CSS/FertilizerDetailsH.css */
+
+.fertilizer-detail-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.fertilizer-detail-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4CAF50, #45a049, #2E8B57);
+}
+
+.back-button {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+  background: linear-gradient(135deg, #45a049, #4CAF50);
+}
+
+.back-button:active {
+  transform: translateY(0);
+}
+
+.fertilizer-detail-card h2 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2c3e50, #4CAF50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.fertilizer-detail-card h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #4CAF50, transparent);
+}
+
+.fertilizer-detail-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #4CAF50;
+  transition: all 0.3s ease;
+}
+
+.fertilizer-detail-card p:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.fertilizer-detail-card strong {
+  color: #2c3e50;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 8px;
+  min-width: 140px;
+}
+
+/* No data message styling */
+.fertilizer-detail-card h2:only-child {
+  background: none;
+  -webkit-text-fill-color: #e74c3c;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fertilizer-detail-card {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .fertilizer-detail-card h2 {
+    font-size: 2rem;
+  }
+
+  .fertilizer-detail-card p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .back-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .fertilizer-detail-card strong {
+    min-width: 120px;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fertilizer-detail-card {
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .fertilizer-detail-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .fertilizer-detail-card p {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+
+  .back-button {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Animation for page load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fertilizer-detail-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Loading state for no data */
+.fertilizer-detail-card h2:only-child {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}

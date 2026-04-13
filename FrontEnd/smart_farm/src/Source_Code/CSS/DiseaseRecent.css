@@ -1,0 +1,95 @@
+.recent-disease-card {
+  width: 3.5in;
+  min-height: 4in;
+  background: linear-gradient(135deg, #f8fff8 0%, #e8f5e8 100%);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1f0e1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recent-disease-card:hover {
+  transform: translateY(-8px) scale(1.03); /* subtle pop effect */
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+}
+
+.recent-disease-card h2,
+.recent-disease-card h3,
+.recent-disease-card p {
+  margin: 0;
+  padding: 0;
+  color: #222; /* sharp text */
+  text-shadow: none; /* remove blurry shadow */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.recent-disease-card h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.recent-disease-card h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.recent-disease-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: justify;
+  background: #ffffff; /* solid background for clarity */
+  color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 3px solid #4CAF50;
+  flex-grow: 1;
+}
+
+.explore-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #689F38, #4CAF50);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.explore-btn:hover {
+  background: linear-gradient(135deg, #4CAF50, #689F38);
+  box-shadow: 0 4px 12px rgba(104, 159, 56, 0.3);
+  transform: translateY(-2px);
+}
+
+.explore-btn:active {
+  transform: translateY(0);
+}
+
+/* Loading state */
+.loading-text {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  text-align: center;
+  font-style: italic;
+  margin: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

@@ -1,0 +1,211 @@
+.home-container {
+  height: 100vh;
+  background-image: url("../Images/homepage.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  position: relative;
+
+}
+
+.intro-box {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 40px 60px;
+  border-radius: 16px;
+ margin-top: 106vh;
+ 
+}
+
+.homepagenews{
+  margin-top:30vh;
+  color: green;
+}
+
+.intro-box h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.intro-box p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.discover-section {
+  margin-top: 80px; /* Reduced margin to move it up */
+}
+
+.discover-link {
+  display: inline-flex;     
+  align-items: center;       
+  gap: 14px;                 
+  text-decoration: none;     
+  color: inherit;            
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.discover-link:hover {
+  transform: scale(1.05);
+}
+
+.circle-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.circle-btn:hover {
+  background-color: purple;
+  transform: scale(1.1);
+}
+
+.arrow-icon {
+  color: black;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.circle-btn:hover .arrow-icon {
+  color: white;
+}
+
+.discover-text {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  transition: color 0.3s;
+}
+
+/* Scroll down arrow styles */
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 80px; /* Moved higher from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  z-index: 10;
+}
+
+.down-arrow-icon {
+  font-size: 2rem;
+  color: white;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.down-arrow-icon:hover {
+  color: purple;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.1);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+.newsrecent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  gap: 100px; /* space between cards */
+  padding: 20px;
+  justify-items: center; /* center cards inside each column */
+  align-items: start;
+  margin-top: vh;
+}
+
+
+
+#freecrop {
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% transparency */
+  color: white; /* text color */
+  border: 2px solid rgba(255, 255, 255, 0.7); /* optional white border with transparency */
+  padding: 15px 40px;
+  font-size: 16px;
+  border-radius: 8px; /* rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px); /* optional glass effect */
+
+  margin-top: 5vh; 
+}
+
+#freecrop:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* darker on hover */
+  transform: scale(1.05); /* subtle grow effect */
+}
+
+
+.tip1 {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 300px; /* slightly smaller to fit nicely */
+  position: absolute; /* position it freely */
+  top:40vh; /* distance from top */
+  left: 10vh; /* distance from right */
+  font-family: Arial, sans-serif;
+  z-index: 10; /* make sure it stays above other elements */
+}
+
+.tip1 h3 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.tip1 ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.tip1 li {
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+.chat-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.2s;
+}
+
+.chat-icon:hover {
+  transform: scale(1.1);
+}
